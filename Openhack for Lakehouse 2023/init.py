@@ -1,7 +1,7 @@
 # Databricks notebook source
 # MAGIC %md
 # MAGIC ※ 事前に/dbfs/FileStore/ディレクトリに、UCI Machine Learning Repositoryから入手可能な[Online Retailデータセット](https://drive.google.com/file/d/1mPT4SceBwZZYjQg6q8uN6xpDIccyxz-l/view)を配置する必要があります。<br>
-# MAGIC 詳しくは、./initノートブックのcmd4を確認ください。
+# MAGIC GUIでFileStoreにアップロードください。
 # MAGIC
 # MAGIC ※ また`user_name`を **your_name** から変更するする必要があります。
 
