@@ -60,7 +60,7 @@
 -- MAGIC    * このフィールドでは、パイプラインの実行方法を指定します。
 -- MAGIC    * **Continuous**パイプラインはデータソースに到着した新しいファイルを継続的に処理し続けます。
 -- MAGIC 1. **Source Code**では、ナビゲーターを使って他のノートブックと同じディレクトリにある**dlt_pipeline**という付録のノートブックを探して選択します。
--- MAGIC 1. **Destination**フィールドに、今まで使用したカタログとデータベースの名前 **`main`** , **`db_hackathon4lakehouse_<username>`** を入力します。
+-- MAGIC 1. **Destination**フィールドに、今まで使用したカタログとデータベースの名前 **`team_<x>`** , **`db_hackathon4lakehouse_<username>`** を入力します。
 -- MAGIC    * **Storage location**フィールドは指定しない場合、DLTが自動的にディレクトリを生成します。今回は指定しないまま実行します。
 -- MAGIC 1. **Cluster** では、**Cluster mode**を **`Fixed Size`** 、ワーカーの数を **`1`** に設定します。
 -- MAGIC 1. **Advanced** では、設定を追加から2つのkey-valueを渡します。1つめはキーに **`holdout_days`** 、値に **`90`** を入力します。2つめはキーに **`your_name`** 、値に **`データベース名で用いたyour_name`** を各々入力します。
@@ -69,6 +69,5 @@
 
 -- COMMAND ----------
 
--- DBTITLE 1,権限の付与(DLT実行者が<your_name>を置換し実行)
-GRANT SELECT ON SCHEMA db_hackathon4lakehouse_<your_name>　 TO `account users`;
-GRANT SELECT ON TABLE dlt_online_retail TO `account users`;
+-- DBTITLE 1,権限の付与(DLT実行者が<catalog>と<database>を置換)
+GRANT SELECT ON SCHEMA <catalog>.<database>　 TO `account users`;
