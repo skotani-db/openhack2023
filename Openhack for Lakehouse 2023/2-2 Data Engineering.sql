@@ -63,7 +63,7 @@
 -- MAGIC 1. **Destination**フィールドに、今まで使用したカタログとデータベースの名前 **`main`** , **`db_hackathon4lakehouse_<username>`** を入力します。
 -- MAGIC    * **Storage location**フィールドは指定しない場合、DLTが自動的にディレクトリを生成します。今回は指定しないまま実行します。
 -- MAGIC 1. **Cluster** では、**Cluster mode**を **`Fixed Size`** 、ワーカーの数を **`1`** に設定します。
--- MAGIC 1. **Cluster** では、設定を追加からキーに **`holdout_days`** 、値に **`90`** を入力します
+-- MAGIC 1. **Advanced** では、設定を追加から2つのkey-valueを渡します。1つめはキーに **`holdout_days`** 、値に **`90`** を入力します。2つめはキーに **`your_name`** 、値に **`データベース名で用いたyour_name`** を各々入力します。
 -- MAGIC 1. **Create**をクリックして、パイプラインをデプロイします。
 -- MAGIC 1. 構成されたDAGやレコードの処理件数を確認しましょう！
 

@@ -28,13 +28,6 @@ data_path = f'/FileStore/db_hackathon4lakehouse_2023/{user_name}'
 
 # COMMAND ----------
 
-# MAGIC %sh
-# MAGIC # # データがない場合、以下を実行します
-# MAGIC # wget "https://drive.google.com/u/0/uc?id=1Er7_qgQzQ_wR0Qdfx-D_y1BzSee14YVB&export=download " -O /tmp/online_retail.csv
-# MAGIC # cp /tmp/online_retail.csv /dbfs/FileStore/
-
-# COMMAND ----------
-
 if mode == "init":
 
     # データベースの準備
