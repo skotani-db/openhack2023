@@ -10,7 +10,7 @@
 # DBTITLE 1,まずはユーザー名を入力しましょう
 # ユーザー名
 user_name = "your_name"
-# assert user_name != "your_name", "initノートブックでユーザー名を入力してください"
+assert user_name != "your_name", "initノートブックでユーザー名を入力してください"
 
 # COMMAND ----------
 
