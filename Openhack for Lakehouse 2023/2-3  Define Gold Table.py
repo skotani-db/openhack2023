@@ -26,7 +26,7 @@
 # MAGIC %sql 
 # MAGIC
 # MAGIC -- チームメンバーのデータベースを参照する場合、こちらで指定する
-# MAGIC USE DATABASE db_db_hackathon4lakehouse_your_name;
+# MAGIC USE DATABASE db_hackathon4lakehouse_your_name;
 # MAGIC
 # MAGIC -- 1日ごとのユニークなトランザクション数
 # MAGIC -- SQL Warehouse で実行ください
