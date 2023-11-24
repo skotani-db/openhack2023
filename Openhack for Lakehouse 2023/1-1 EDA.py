@@ -82,7 +82,7 @@
 # MAGIC   *
 # MAGIC FROM
 # MAGIC   read_files(
-# MAGIC     "/Workspace/Shared/online_retail.csv",
+# MAGIC     "dbfs:/FileStore/online_retail.csv",
 # MAGIC     format => 'csv',
 # MAGIC     header => true
 # MAGIC   )

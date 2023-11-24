@@ -1,6 +1,6 @@
 # Databricks notebook source
 # MAGIC %md
-# MAGIC ※ 事前に/Sharedディレクトリに、UCI Machine Learning Repositoryから入手可能な[Online Retailデータセット](https://drive.google.com/file/d/1mPT4SceBwZZYjQg6q8uN6xpDIccyxz-l/view)を配置する必要があります。<br>
+# MAGIC ※ 事前に/dbfs/FileStore/ディレクトリに、UCI Machine Learning Repositoryから入手可能な[Online Retailデータセット](https://drive.google.com/file/d/1mPT4SceBwZZYjQg6q8uN6xpDIccyxz-l/view)を配置する必要があります。<br>
 # MAGIC 詳しくは、./initノートブックのcmd4を確認ください。
 # MAGIC
 # MAGIC ※ また`user_name`を **your_name** から変更するする必要があります。
@@ -28,10 +28,10 @@ data_path = f'/FileStore/db_hackathon4lakehouse_2023/{user_name}'
 
 # COMMAND ----------
 
-# %sh
-# # データがない場合、以下を実行します
-# wget "https://drive.google.com/u/0/uc?id=1Er7_qgQzQ_wR0Qdfx-D_y1BzSee14YVB&export=download " -O /tmp/online_retail.csv
-# cp /tmp/online_retail.csv /Workspace/Shared/
+# MAGIC %sh
+# MAGIC # # データがない場合、以下を実行します
+# MAGIC # wget "https://drive.google.com/u/0/uc?id=1Er7_qgQzQ_wR0Qdfx-D_y1BzSee14YVB&export=download " -O /tmp/online_retail.csv
+# MAGIC # cp /tmp/online_retail.csv /dbfs/FileStore/
 
 # COMMAND ----------
 
