@@ -7,7 +7,7 @@ SELECT
   *
 FROM
   cloud_files(
-    "dbfs:/Volumes/main/db_hackathon4lakehouse_${your_name}/volume_${your_name}",
+    "dbfs:/Volumes/${your_team}/db_hackathon4lakehouse_${your_name}/volume_${your_name}",
     "csv",
     map(
       "cloudFiles.inferColumnTypes",
