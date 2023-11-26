@@ -236,6 +236,7 @@
 # MAGIC     CustomerId IS NOT NULL
 # MAGIC )
 # MAGIC SELECT
+# MAGIC   CustomerID,
 # MAGIC   -- 顧客別平均購入イベント間隔日数
 # MAGIC   AVG(
 # MAGIC     DATEDIFF(a.NextInvoiceDate, a.InvoiceDate)
