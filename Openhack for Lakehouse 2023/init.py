@@ -21,7 +21,7 @@ assert user_name != "your_name", "initノートブックでユーザー名を入
 catalog = team_name
 database_name = "db_hackathon4lakehouse"
 
-dbutils.widgets.text("mode", "cleanup")
+dbutils.widgets.text("mode", "init")
 mode = dbutils.widgets.get("mode")
 
 database = f"{database_name}_{user_name}"
